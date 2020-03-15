@@ -1,2 +1,2 @@
-# Simple-knowledge-note
+# Simple_knowledge_note
 간단한 프로그래밍 관련 지식들을 기록합니다.
