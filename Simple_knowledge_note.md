@@ -7,7 +7,7 @@
 ### [클래스 멤버 변수 초기화]
 - 생성자 구현부에서 멤버 변수에 값을 대입하는 것은 <b>초기화가 아닌 할당</b>이다. 따라서 함수의 헤더에 사용하는 <b>초기화 리스트 (initializer list)</b>를 사용하자.
 
-```C++
+```cpp
 class Foo
 {
     Foo()
@@ -45,7 +45,7 @@ class Foo
 ### [auto 키워드와 const]
 - auto 키워드로 const 타입 변수를 저장할 때 auto 앞에 const를 붙여주지 않아도 자동으로 const로 받아진다. 하지만 이는 코드를 볼 때 const 여부를 판단하기 어려울 수 있다. 따라서 <b>가독성을 위해 const 타입이라면 auto 앞에 const 키워드를 붙여 const 타입이라는 것을 명시해주자.</b>
 
-```C++
+```cpp
 auto& name = GetString();       // 가독성下
 const auto& name = GetString(); // 가독성上
 ```
@@ -55,7 +55,7 @@ const auto& name = GetString(); // 가독성上
 ### [auto 키워드와 pointer] 
 - auto 키워드로 포인터 타입을 받을 때 포인터(*) 타입을 붙이지 않아도 알아서 포인터 타입으로 변환해준다. 하지만 가독성을 위해 포인터를 받으면 auto 키워드에 *을 붙여주자.
 
-```C++
+```cpp
 auto  ptr = GetPointer();  // 가독성下
 auto* ptr = GetPointer(); // 가독성上
  ```
